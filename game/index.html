@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember Court — a duel of ember, tide, thorn and moon</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <div class="brand">EMBER COURT</div>
+    <div id="turn-label">Ember Court</div>
+    <div class="brand-sub">A card duel · 30 life · first to 0 loses</div>
+  </header>
+
+  <section id="rival-zone" class="hero-zone">
+    <div id="rival-panel" class="hero-panel" data-side="rival">
+      <div class="hero-name">RIVAL</div>
+      <div class="hero-life"><span class="heart">♥</span> <span id="rival-life">30</span></div>
+      <div class="hero-ember">Ember <span id="rival-ember">0/0</span></div>
+      <div class="hero-deck" id="rival-deck">Deck 32</div>
+    </div>
+    <div id="rival-hand" class="hand backs"></div>
+  </section>
+
+  <div id="rival-board" class="board"></div>
+
+  <div id="middle">
+    <div id="log"></div>
+    <button id="end-turn" class="end-btn">End Turn ⏎</button>
+  </div>
+
+  <div id="player-board" class="board"></div>
+
+  <section id="player-zone" class="hero-zone">
+    <div id="player-panel" class="hero-panel" data-side="player">
+      <div class="hero-name">YOU</div>
+      <div class="hero-life"><span class="heart">♥</span> <span id="player-life">30</span></div>
+      <div class="hero-ember">Ember <span id="player-ember">0/0</span></div>
+      <div class="hero-deck" id="player-deck">Deck 32</div>
+    </div>
+    <div id="player-hand" class="hand"></div>
+  </section>
+
+  <div id="overlay" class="overlay"></div>
+  <div id="floaters"></div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
